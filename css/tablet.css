@@ -1,0 +1,107 @@
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    * {
+        font-size: 14px;
+    }
+    section > .container{
+        width: 100%;
+        min-width: 100%;
+        margin: auto;
+        padding: 30px;
+    }
+
+    /* r1. Xây dựng phần ảnh Banne */
+    #banner .container {
+        width: 100%;
+        min-width: 100%;
+        height: 90vh;
+        padding: 0;
+        margin: auto;
+        position: relative;
+    }
+
+    /* 2. Xây dựng Navbar */
+    #nav-bar a:nth-child(2) {
+        margin-right: 50px;
+    }
+
+    /* 11. (Nâng cao) Bổ sung ảnh cá nhân */
+    .avatar {
+        display: none;
+    }
+
+    /* 3. Xây dựng phần "Thông tin cá nhân" */
+    #about .container {
+        grid-template-columns: 50% 50%;
+    }
+    #about h1 {
+        white-space: nowrap;
+    }
+    #about ul {
+        padding-left: 0;
+    }
+    #personal-info .link {
+        text-align: start;
+    }
+    #personal-info a {
+        padding: 0 10px;
+    }
+    #personal-info a:not(:last-child) {
+        border-right: none;
+    }
+
+    /* 4. Xây dựng phần Thông tin nghề nghiệp */
+    #job-info .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 20px;
+    }
+    .job-detail:first-child,
+    .job-detail:nth-child(2),
+    .job-detail:nth-child(3) {
+        grid-row: auto;
+    }
+
+    /* 7. Xây dựng phần Chứng chỉ - Giải thưởng */
+
+    .certificate-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .each-certificate {
+        display: flex;
+        flex-direction: column;
+    }
+    .each-certificate img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .certificate-name {
+        font-size: 18px;
+    }
+
+    /* 8. Xây dựng phần Dự án */
+    .project-detail {
+        min-width: 0;
+    }
+    .project-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .date {
+        width: 60px;
+        margin-right: 0;
+    }
+    .company {
+        margin: 0;
+    }
+    .position {
+        grid-column: 2/ -1;
+        margin: 0;
+    }
+    td:first-child {
+        white-space: normal;
+    }
+}
